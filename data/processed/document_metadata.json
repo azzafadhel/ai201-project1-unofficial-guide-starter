@@ -1,0 +1,122 @@
+[
+  {
+    "id": "1",
+    "title": "WSU International Student Handbook",
+    "description": "",
+    "url": "https://ip.wsu.edu/student-handbook/",
+    "source_type": "official WSU source",
+    "original_type": "",
+    "raw_path": "data/raw_docs/1_wsu_international_student_handbook.html",
+    "clean_path": "data/clean_docs/1_wsu_international_student_handbook.txt",
+    "num_characters": 97693,
+    "num_chunks": 140
+  },
+  {
+    "id": "2",
+    "title": "WSU Campus Arrival Guide",
+    "description": "",
+    "url": "https://ip.wsu.edu/future-students/admitted-students/campus-arrival-guide/",
+    "source_type": "official WSU source",
+    "original_type": "",
+    "raw_path": "data/raw_docs/2_wsu_campus_arrival_guide.html",
+    "clean_path": "data/clean_docs/2_wsu_campus_arrival_guide.txt",
+    "num_characters": 7562,
+    "num_chunks": 11
+  },
+  {
+    "id": "3",
+    "title": "WSU New Student Checklist",
+    "description": "",
+    "url": "https://ip.wsu.edu/future-students/admitted-students/new-student-checklist/",
+    "source_type": "official WSU source",
+    "original_type": "",
+    "raw_path": "data/raw_docs/3_wsu_new_student_checklist.html",
+    "clean_path": "data/clean_docs/3_wsu_new_student_checklist.txt",
+    "num_characters": 6901,
+    "num_chunks": 10
+  },
+  {
+    "id": "4",
+    "title": "WSU Pullman Transportation",
+    "description": "",
+    "url": "https://pullman.wsu.edu/community-life/transportation/",
+    "source_type": "official WSU source",
+    "original_type": "",
+    "raw_path": "data/raw_docs/4_wsu_pullman_transportation.html",
+    "clean_path": "data/clean_docs/4_wsu_pullman_transportation.txt",
+    "num_characters": 4278,
+    "num_chunks": 7
+  },
+  {
+    "id": "5",
+    "title": "WSU Transit Fee Information",
+    "description": "",
+    "url": "https://transportation.wsu.edu/transitfeeinformation/",
+    "source_type": "official WSU source",
+    "original_type": "",
+    "raw_path": "data/raw_docs/5_wsu_transit_fee_information.html",
+    "clean_path": "data/clean_docs/5_wsu_transit_fee_information.txt",
+    "num_characters": 1463,
+    "num_chunks": 3
+  },
+  {
+    "id": "6",
+    "title": "WSU Transit Options",
+    "description": "",
+    "url": "https://transportation.wsu.edu/transportation-options/transit-options/",
+    "source_type": "official WSU source",
+    "original_type": "",
+    "raw_path": "data/raw_docs/6_wsu_transit_options.html",
+    "clean_path": "data/clean_docs/6_wsu_transit_options.txt",
+    "num_characters": 1415,
+    "num_chunks": 3
+  },
+  {
+    "id": "7",
+    "title": "WSU CougarCard Center",
+    "description": "",
+    "url": "https://cougarcash.wsu.edu/home/",
+    "source_type": "official WSU source",
+    "original_type": "",
+    "raw_path": "data/raw_docs/7_wsu_cougarcard_center.html",
+    "clean_path": "data/clean_docs/7_wsu_cougarcard_center.txt",
+    "num_characters": 1219,
+    "num_chunks": 2
+  },
+  {
+    "id": "8",
+    "title": "WSU Dining Centers / Northside Café",
+    "description": "",
+    "url": "https://dining.wsu.edu/dining-options/dining-centers/northside-cafe/",
+    "source_type": "official WSU source",
+    "original_type": "",
+    "raw_path": "data/raw_docs/8_wsu_dining_centers_northside_caf.html",
+    "clean_path": "data/clean_docs/8_wsu_dining_centers_northside_caf.txt",
+    "num_characters": 2038,
+    "num_chunks": 3
+  },
+  {
+    "id": "9",
+    "title": "WSU Dining Services Allergen and Dietary Information",
+    "description": "",
+    "url": "https://dining.wsu.edu/nutrition/navigation-netnutrition/",
+    "source_type": "official WSU source",
+    "original_type": "",
+    "raw_path": "data/raw_docs/9_wsu_dining_services_allergen_and_dietary_information.html",
+    "clean_path": "data/clean_docs/9_wsu_dining_services_allergen_and_dietary_information.txt",
+    "num_characters": 1975,
+    "num_chunks": 3
+  },
+  {
+    "id": "10",
+    "title": "Reddit Discussion: Do I Need a Car at WSU?",
+    "description": "",
+    "url": "https://www.reddit.com/r/wsu/comments/1alaw7h/do_i_need_a_car/",
+    "source_type": "unofficial student discussion",
+    "original_type": "",
+    "raw_path": "data/raw_docs/10_reddit_discussion_do_i_need_a_car_at_wsu.html",
+    "clean_path": "data/clean_docs/10_reddit_discussion_do_i_need_a_car_at_wsu.txt",
+    "num_characters": 4353,
+    "num_chunks": 7
+  }
+]

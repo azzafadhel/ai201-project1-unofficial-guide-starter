@@ -63,6 +63,13 @@ For Reddit discussion content, each comment or small group of related comments s
 Each chunk will store metadata:source title, source URL or local file path, source type: official WSU source or unofficial student discussion, topic, if known, chunk index, ingestion date
 
 
+
+For Milestone 3, I kept character-based chunking because the total chunk count was reasonable and the inspected chunks were mostly readable and useful. The script produced 189 chunks across 10 sources, which is within the expected range. I may improve this later with paragraph-aware chunking as a stretch improvement.
+
+
+
+**Milestone 3 inspection result:**
+After running `scripts/ingest_and_chunk.py`, the pipeline successfully loaded 10 sources and produced 189 total chunks. I inspected representative chunks from the WSU International Student Handbook, Campus Arrival Guide, Pullman Transportation page, CougarCard page, Dining pages, and Reddit discussion. The chunks contained useful student survival information such as housing, dining, transportation, CougarCard use, SEVIS check-in, myWSU, health resources, winter preparation, and student transportation advice.
 ---
 
 ## Retrieval Approach
@@ -128,7 +135,8 @@ Some questions may require multiple sources.
 
 4.A question like “Do I need a car at WSU?” may need both official transportation information and unofficial student experience. The retriever should return multiple chunks so the generator can combine official facts with student perspective.
 
-
+5.Some chunks may start or end in the middle of a sentence.
+Because the current implementation uses character-based chunking, a few chunks may have imperfect boundaries. I inspected sample chunks and decided this was acceptable for Milestone 3 because the chunks were still readable and substantive. A future improvement would be paragraph-aware chunking.
 
 ---
 
