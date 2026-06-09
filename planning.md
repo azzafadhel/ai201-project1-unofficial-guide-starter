@@ -98,6 +98,13 @@ Source reliability: Official WSU sources should be preferred for factual answers
 The system should prioritize official WSU sources when answering factual questions. Reddit chunks should only be used when the question asks about student opinions or practical lived experience.
 ---
 
+
+
+
+## Milestone 4 Retrieval Test
+
+I embedded 189 chunks using `sentence-transformers/all-MiniLM-L6-v2` and stored them in ChromaDB. I tested retrieval on all 5 evaluation questions with top-k = 4. The retrieved chunks were relevant for the myWSU, SEVIS check-in, Pullman Transit, CougarCard, and dining/allergen questions. Most top distances were below 0.5. The dining/allergen query retrieved the correct NetNutrition source at rank 3, so this may be improved later with cleaner or paragraph-aware chunks.
+---
 ## Evaluation Plan
 
 <!-- List your 5 test questions with their expected correct answers.
