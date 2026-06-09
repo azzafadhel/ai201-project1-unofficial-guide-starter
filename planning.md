@@ -104,6 +104,22 @@ The system should prioritize official WSU sources when answering factual questio
 ## Milestone 4 Retrieval Test
 
 I embedded 189 chunks using `sentence-transformers/all-MiniLM-L6-v2` and stored them in ChromaDB. I tested retrieval on all 5 evaluation questions with top-k = 4. The retrieved chunks were relevant for the myWSU, SEVIS check-in, Pullman Transit, CougarCard, and dining/allergen questions. Most top distances were below 0.5. The dining/allergen query retrieved the correct NetNutrition source at rank 3, so this may be improved later with cleaner or paragraph-aware chunks.
+
+
+
+## Milestone 5 Grounded Generation Test
+
+I connected the ChromaDB retriever to Groq using `llama-3.3-70b-versatile` and built a Gradio interface. The prompt instructs the model to answer only from retrieved context and to say "I don't have enough information on that." when the context is insufficient. Source attribution is appended programmatically from retrieved metadata, so the interface always shows which documents were used.
+
+I tested end-to-end generation on Pullman Transit, CougarCard, and SEVIS check-in questions. The system returned grounded answers with retrieved source names, URLs, and chunk previews. I also tested an out-of-domain question to confirm the system refuses unsupported questions.
+
+
+
+##  Milestone 6 
+This is my WSU Campus Survival Guide RAG system. I type a question into the Gradio interface, the system retrieves chunks from ChromaDB, sends them to Groq/Llama, and shows the answer with sources.
+Here I ask an out-of-scope question about Seattle hiking trails. The system correctly refuses to answer because that topic is not in my WSU documents. However, the retriever still returns weakly related Pullman transportation chunks because ChromaDB always returns the nearest top-k chunks. This is a limitation I discuss in my README.
+Here is my final evaluation report. I tested all five questions from planning.md, recorded the expected answer, system response, and accuracy judgment.
+
 ---
 ## Evaluation Plan
 
