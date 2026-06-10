@@ -148,8 +148,14 @@ I tested retrieval with all 5 evaluation questions from `planning.md`. The syste
 **Query:**
 What should international students use myWSU for before or after arriving at WSU?
 
-**Top result:**
-WSU Campus Arrival Guide, chunk index 2, distance 0.3697.
+**Top returned chunk:**
+Source: WSU Campus Arrival Guide, chunk index 2, distance 0.3697.
+
+
+myWSU
+Your myWSU account is the central location where you will see your class schedule, pay your tuition, and many more important matters.
+Log in to your myWSU account
+
 
 **Why it is relevant:**
 The returned chunk directly says that myWSU is used to see class schedules, pay tuition, and manage important student matters.
@@ -159,8 +165,13 @@ The returned chunk directly says that myWSU is used to see class schedules, pay 
 **Query:**
 What should international students do for SEVIS check-in after arriving at WSU?
 
-**Top result:**
-WSU Campus Arrival Guide, chunk index 4, distance 0.3619.
+**Top returned chunk:**
+Source: WSU Campus Arrival Guide, chunk index 4, distance 0.3619.
+
+```text
+New Student SEVIS check-in
+You are required to check in with SEVIS as a new student within your first week of being on campus. Failure to do so will result in the termination of your SEVIS record and could have a negative impact on your immigration status. Log in to myPassport using your WSU username and password and complete the new student check-in.
+```
 
 **Why it is relevant:**
 The returned chunk directly explains that students must check in with SEVIS within their first week on campus and complete new student check-in through myPassport.
@@ -170,8 +181,14 @@ The returned chunk directly explains that students must check in with SEVIS with
 **Query:**
 How can WSU students use Pullman Transit without paying a fare each time?
 
-**Top result:**
-WSU Transit Fee Information, chunk index 1, distance 0.3005.
+**Top returned chunk:**
+Source: WSU Transit Fee Information, chunk index 1, distance 0.3005.
+
+```text
+Students rely on transit. Pullman Transit provides as many as 1.4 million rides per year and most of those riders are WSU students!
+Students need to simply show their CougarCard to ride the bus!
+Pullman Transit provides services Monday through Sunday year-round.
+```
 
 **Why it is relevant:**
 The returned chunk directly says students need to show their CougarCard to ride the bus.
@@ -306,6 +323,8 @@ This shows that the system can refuse to answer questions that are outside the d
 ---
 
 ## Evaluation Report
+
+The table below records the five evaluation questions from `planning.md`. For each question, I include the expected answer, the system response, retrieval quality, and response accuracy judgment.
 
 | # | Question                                                                                 | Expected answer                                                                                                                                                                                        | System response (summarized)                                                                                                                                                                                                  | Retrieval quality | Response accuracy |
 | - | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | ----------------- |
